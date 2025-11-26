@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>룰렛</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">랜덤 숫자</a></li>
+      <li><a href="roulette.html">룰렛</a></li>
+      <li><a href="pick.html">랜덤 뽑기</a></li>
+      <li><a href="group.html">조짜기</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <h2>🎰 룰렛</h2>
+  <canvas id="rouletteCanvas" width="400" height="400"></canvas>
+  <textarea id="rouletteOptions" rows="5">🍔버거
+🍕피자
+🍣초밥</textarea>
+  <button onclick="spinRoulette()">돌리기</button>
+</section>
+
+<p id="rouletteResult"></p>
+
+<script src="app.js"></script>
+</body>
+</html>

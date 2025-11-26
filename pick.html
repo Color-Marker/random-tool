@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>랜덤 뽑기</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+  #pickArea {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    flex-wrap: wrap;         /* 줄 바꿈 가능 */
+    gap: 10px;               /* 원 사이 간격 */
+  }
+
+  .pick-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.2s; /* 마우스 오버 시 부드러운 확대 */
+  }
+
+  .pick-circle:hover {
+    transform: scale(1.2); /* 마우스 오버 시 20% 확대 */
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">랜덤 숫자</a></li>
+      <li><a href="roulette.html">룰렛</a></li>
+      <li><a href="pick.html">랜덤 뽑기</a></li>
+      <li><a href="group.html">조짜기</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <h2>🎲 랜덤 뽑기</h2>
+
+  <!-- 1. 항목 입력 -->
+  <textarea id="picker" rows="5" placeholder="항목을 한 줄씩 입력"></textarea>
+  <br>
+  <button onclick="setupPick()">랜덤 원 만들기</button>
+
+  <!-- 2. 원을 표시할 영역 -->
+<div id="pickArea"></div>
+
+
+  <!-- 3. 선택 결과 표시 -->
+  <div id="pickResult" style="margin-top:10px; font-weight:bold;"></div>
+</section>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

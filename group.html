@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>조짜기</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">랜덤 숫자</a></li>
+      <li><a href="roulette.html">룰렛</a></li>
+      <li><a href="pick.html">랜덤 뽑기</a></li>
+      <li><a href="group.html">조짜기</a></li>
+    </ul>
+  </nav>
+</header>
+<section>
+  <h2>👥 조 짜기</h2>
+  <textarea id="groupList" rows="5">철수
+영희
+민수
+지연</textarea>
+  <input id="groupSize" type="number" value="2" />
+  <button onclick="makeGroups()">조 생성</button>
+  <div id="groupResult"></div>
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
